@@ -15,7 +15,7 @@
             <input type="text", id="userEmail", name="userEmail", value="get from db" required></input><br> <!-- Display email + edit functionality & icon, form(?) to send new email to db + input validation-->
 
             <label for="userPassword">Password</label>
-            <input type="text", id="userPassword", name="userPassword", value="get from db" required></input><br> <!--Display lock icon + masked password + edit functionality & icon, form(?) to send new name to db + input validation, clarify password policy + storage system (hash/salt etc)-->
+            <input type="password", id="userPassword", name="userPassword", value="get from db" required></input><br> <!--Display lock icon + masked password + edit functionality & icon, form(?) to send new name to db + input validation, clarify password policy + storage system (hash/salt etc)-->
 
             <label for="userLocation">Location</label>
             <input type="text", id="userLocation", name="userLocation", value="get from db" required></input><br> <!--Display location icon + location (city, country), form(?) to send new location to db + input validation, clarify drop down list of all location or only specific region/only user input-->
