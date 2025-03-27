@@ -1,0 +1,308 @@
+:root {
+  --color-white: #fff;
+  --color-gray: #a1a5b0;
+  --color-gray-light: #e6ebef;
+  --color-cream: #f4f0ef;
+  --color-blue: #012f47;
+  --color-purple: #7341d8;
+  --color-orange: #fb8200;
+  --color-brown: #544235;
+  --color-shadow: 0 3px 6px rgba(141, 107, 80, 0.1);
+  --color-shadow-hovered: 0 5px 10px rgba(141, 107, 80, 0.5);
+  --size-max-width: 320px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.375s ease;
+  color: var(--color-brown);
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--color-cream);
+}
+
+button {
+  cursor: pointer;
+}
+
+.setup-page-wrapper {
+  max-width: var(--size-max-width);
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+.create-progress-container {
+  margin: 30px;
+  width: 250px;
+  display: grid;
+  gap: 8px;
+  justify-self: center;
+  justify-items: center;
+}
+
+.create-progress-desc {
+  color: var(--color-purple);
+  font-size: 1rem;
+}
+
+.create-progress-bar {
+  background-color: var(--color-gray);
+  width: 100%;
+  border-radius: 8px;
+}
+
+.create-progress-fill {
+  background-color: var(--color-purple);
+  height: 23px;
+  border-radius: 8px;
+}
+
+.create-title,
+.create-title2,
+.create-subtitle {
+  color: var(--color-blue);
+  max-width: 290px;
+  margin: 50px auto;
+  font-size: 2.8rem;
+}
+
+.create-form {
+  display: grid;
+  gap: 20px;
+}
+
+.create-form-col {
+  display: grid;
+  gap: 8px;
+}
+
+.create-form-row {
+  display: grid;
+  position: relative;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+input,
+select,
+.create-form-gender,
+.create-form-other {
+  border-radius: 50px;
+  border: none;
+  background-color: var(--color-white);
+  box-shadow: var(--color-shadow);
+  color: var(--color-brown);
+  padding: 15px 18px;
+  font-size: 0.8rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.create-form-icon {
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  align-self: center;
+  pointer-events: none;
+}
+
+.create-form-icon.pen,
+.create-form-icon.drop {
+  right: 18px;
+}
+
+.create-form-icon.loc,
+.create-form-icon.cal {
+  left: 18px;
+  height: 18px;
+  width: 18px;
+}
+
+select,
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none; /* Firefox */
+  padding-left: 45px;
+}
+
+.create-form-button {
+  margin: 30px 0 40px;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border: none;
+  height: 50px;
+  width: 290px;
+  justify-self: center;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  box-shadow: var(--color-shadow);
+}
+
+.create-form-button:hover {
+  box-shadow: var(--color-shadow-hovered);
+}
+
+/* Dog's Profile */
+
+.create-form-upload,
+.form-file-input,
+.create-form-preview,
+.create-form-img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1.5px dashed var(--color-brown);
+  position: relative;
+}
+
+.form-file-input {
+  display: none;
+}
+
+.create-form-upload-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.create-form-row.pic {
+  display: flex;
+  justify-items: flex-start;
+  gap: 10px;
+}
+
+.create-form-preview,
+.create-form-img {
+  border: none;
+}
+
+.create-form-row.gender,
+.create-form-row.other {
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.create-form-gender {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.create-form-gender input[type="radio"],
+.create-form-other input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--color-brown);
+  border-radius: 50%;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-form-gender input[type="radio"]:checked,
+.create-form-other input[type="checkbox"]:checked {
+  background: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+/* Inner circle */
+.create-form-gender input[type="radio"]:checked::after,
+.create-form-other input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 2.5px solid var(--color-purple);
+  background: var(--color-white);
+  border-radius: 50%;
+  margin: auto;
+}
+
+.create-form-gender:has(input[type="radio"]:checked),
+.create-form-other:has(input[type="checkbox"]:checked) {
+  background-color: var(--color-purple);
+}
+
+.create-form-gender:has(input[type="radio"]:checked) span,
+.create-form-other:has(input[type="checkbox"]:checked) span {
+  color: var(--color-white);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* Temperament */
+
+.create-title2 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+}
+
+.create-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.create-form-other {
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-form-row.energy {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--color-gray-light);
+  border-radius: 20px;
+}
+
+.create-form-energy {
+  border-radius: 20px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  border: 1.5px solid var(--color-gray-light);
+}
+
+.create-form-energy span{
+  color: var(--color-gray);
+}
+
+.create-form-energy:has(input[type="radio"]:checked){
+  background-color: var(--color-white);
+}
+
+.create-form-energy:has(input[type="radio"]:checked) span{
+  color: var(--color-purple);
+}
+
+.create-form-energy input[type="radio"] {
+  display: none;
+}
+
+@media screen and (min-width: 400px) {
+  :root {
+    --size-max-width: 375px;
+  }
+}
