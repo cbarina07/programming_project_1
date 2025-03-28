@@ -14,25 +14,15 @@
                     <a href="/"><img src="/image/back_arrow.png">  Edit Dog Profile</a>
                 </h3>
             </div>
-            
-            <div class="current-dog-container"> <!-- TODO: set up CSS  to match deliverables -->
-                <h3 class="current-dog-container"> <!-- TODO: get current dog from db-->
-                    Robbie
-                </h3>
-                <h3 class="add-dog-container">
-                    <a href="dog-create.php"><button class="add-dog-button">+ Add Dog</button></a>
-                </h3>
-            </div>
 
-            <div class="create-form-row energy"> <!-- TODO: get dog name from db -->
-                <label class="create-form-energy" for="currentDog">
-                    <span>Robbie</span>
-                    <input type="radio" name="energy" id="relaxed" value="relaxed" checked>
-                </label>
-                <label class="create-form-energy" for="moderate">
-                    <span>Moderate</span>
-                    <input type="radio" name="energy" id="moderate" value="moderate">
-                </label>
+            <div class="create-row dog"> <!-- TODO: get dog name from db -->
+                    <label class="create-dog" for="selected">
+                        <span>Robbie</span>
+                        <input type="radio" name="dog" id="selected" checked hidden>
+                    </label>
+                    <label class="create-dog" for="new">
+                        <a href="dog-create.php" ><span>+ add dog</span></a>
+                    </label>
             </div>
         </div>
     </header>

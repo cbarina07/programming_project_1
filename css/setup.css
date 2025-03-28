@@ -30,7 +30,9 @@ button {
   cursor: pointer;
 }
 
-
+a{
+  text-decoration: none;
+}
 
 .setup-back-wrapper {
   max-width: var(--size-max-width);
@@ -338,63 +340,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
-/* Header container */
-.dog-profile-header .header-container {
+/* Dog profile */
+.create-row.dog {
   display: flex;
-  align-items: center;
-  justify-content: space-between; /* space between left & right sections */
-  max-width: var(--size-max-width);
-  margin: 0 auto;
-  padding: 16px; /* Some padding for breathing room */
-}
-
-/* Left side: back arrow + text */
-.header-left .back-link {
-  display: inline-flex;         /* Put icon + text side by side */
-  align-items: center;          /* Vertically center them */
-  gap: 8px;                     /* Spacing between icon and text */
-  text-decoration: none;        /* Remove default underline */
-  color: var(--color-blue-dark);
-  font-size: 1.2rem;            /* Adjust text size as needed */
-}
-
-.header-left .back-link img {
-  width: 16px;   /* Adjust arrow size */
-  height: auto;
-}
-
-/* Right side: “Robbie” + “+ Add Dog” */
-.header-right {
-  display: flex;
-  gap: 8px; /* Spacing between the buttons */
-}
-
-/* Shared pill styles */
-.dog-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  box-shadow: var(--color-shadow);
+  justify-content: space-evenly;
   background-color: var(--color-gray-light);
-  color: var(--color-brown);
-  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-/* “Robbie” pill in active state */
-.dog-pill.active {
-  background-color: var(--color-white);
-  color: var(--color-purple);
+.create-dog {
+  border-radius: 20px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  border: 1.5px solid var(--color-gray-light);
 }
 
-/* “+ Add Dog” button styling */
-.dog-pill.add-dog {
-  background-color: transparent;
+.create-dog span{
   color: var(--color-gray);
-  box-shadow: none;
-  border: 1px solid var(--color-gray-light);
+}
+
+.create-dog:has(input[type="radio"]:checked) {
+  background-color: var(--color-white);
+}
+
+.create-dog:has(input[type="radio"]:checked) span {
+  color: var(--color-purple);
 }
