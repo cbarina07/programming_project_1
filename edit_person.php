@@ -74,9 +74,9 @@
                 </div>
             </div>
 
-        <div class="create-form-row"><!-- form submission -->
-            <button type="submit" class="create-form-button">Next</button>
-        </div>
+            <div class="create-form-row"><!-- form submission -->
+                <button type="submit" class="create-form-button">Save settings</button>
+            </div>
         </form>
     </div>
     </section>
