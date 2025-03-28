@@ -8,10 +8,19 @@
 <body>
 
     <header>
-        <div class="setup-back-wrapper">
+        <div class="setup-back-wrapper"> <!--TODO: add link to go back to previous page 'settings' page-->
             <div class="create-back-container">
                 <h3 class="create-back-desc">
                     <a href="/"><img src="/image/back_arrow.png">  Edit Dog Profile</a>
+                </h3>
+            </div>
+            
+            <div class="current-dog-container"> <!-- TODO: set up CSS  to match deliverables -->
+                <h3 class="current-dog-container"> <!-- TODO: get current dog from db-->
+                    Robbie
+                </h3>
+                <h3 class="add-dog-container">
+                    <a href="dog-create.php"><button class="add-dog-button">+ Add Dog</button></a>
                 </h3>
             </div>
         </div>
@@ -55,7 +64,7 @@
                 </div>
             </div>
 
-            <div class="create-form-col">
+            <div class="create-form-col"> <!-- TODO: get gender (from db) and auto select gender first instead of leaving it empty -->
                 <label for="gender">Gender</label>
                 <div class="create-form-row gender">
                     <label class="create-form-gender" for="gender-male">
@@ -168,7 +177,7 @@
                 </div>
             </div>
 
-            <div class="create-form-row">
+            <div class="create-form-row"> <!-- TODO: create form submission to DB -->
                 <button type="submit" class="create-form-button">Save Settings</button>
             </div>
         </form>
