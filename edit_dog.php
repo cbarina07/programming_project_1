@@ -23,6 +23,17 @@
                     <a href="dog-create.php"><button class="add-dog-button">+ Add Dog</button></a>
                 </h3>
             </div>
+
+            <div class="create-form-row energy"> <!-- TODO: get dog name from db -->
+                <label class="create-form-energy" for="currentDog">
+                    <span>Robbie</span>
+                    <input type="radio" name="energy" id="relaxed" value="relaxed" checked>
+                </label>
+                <label class="create-form-energy" for="moderate">
+                    <span>Moderate</span>
+                    <input type="radio" name="energy" id="moderate" value="moderate">
+                </label>
+            </div>
         </div>
     </header>
 
