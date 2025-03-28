@@ -7,8 +7,16 @@
 </head>
 
 </head>
-<body>
-    <a href="/"> &#8592 Personal Information</a> <!--add link to go back to previous page 'settings' page-->
+<body>         
+    <header>  <!--add link to go back to previous page 'settings' page-->
+        <div class="setup-back-wrapper">
+            <div class="create-back-container">
+                <h3 class="create-back-desc">
+                    <a href="/"><img src="/image/back_arrow.png"> Personal Information</a>
+                </h3>
+            </div>
+        </div>
+    </header>
 
     <section id="user-form">
     <div class="setup-page-wrapper">
