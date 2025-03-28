@@ -39,33 +39,46 @@
             </div>
 
             <div class="create-form-col"> <!-- Display location (from db) + update new location to db + get list of avaliable location (?) -->
-                    <label for="location">Location</label>
-                    <div class="create-form-row">
-                        <img src="image/location.png" class="create-form-icon loc" alt="Location">
-                        <select name="location" id="location">
-                            <option value="New York, USA" selected>New York, USA</option>
-                            <option value="Melbourne, Australia">Melbourne, Australia</option>
-                            <option value="Sydney, Australia">Sydney, Australia</option>
-                            <option value="Tokyo, Japan">Tokyo, Japan</option>
-                        </select>
-                        <img src="image/dropdown.png" class="create-form-icon drop" alt="Dropdown">
-                    </div>
+                <label for="location">Location</label>
+                <div class="create-form-row">
+                    <img src="image/location.png" class="create-form-icon loc" alt="Location">
+                    <select name="location" id="location">
+                        <option value="New York, USA" selected>New York, USA</option>
+                        <option value="Melbourne, Australia">Melbourne, Australia</option>
+                        <option value="Sydney, Australia">Sydney, Australia</option>
+                        <option value="Tokyo, Japan">Tokyo, Japan</option>
+                    </select>
+                    <img src="image/dropdown.png" class="create-form-icon drop" alt="Dropdown">
                 </div>
-        </form>
-    </div>
-    </section>
-        <label for="userDoB">Date of Birth</label>
-        <input type="date", id="userDoB", name="userDoB", value="get from db" required ></input><br><!--Cake icon + DoB in (mmm dd, yyyy) + edit functionality & icon, clarify what client would like (user input/clicking on visual calender etc) + input validation-->
+            </div>
 
-        <label for="userGender">Gender</label>
-        <input type="radio", id="male", name="userGender", value="male">Male</input>
-        <input type="radio", id="female", name="userGender", value="female">Female</input><br><!-- form to get male/female button using radio?-->
+            <div class="create-form-col"> <!-- get Dob (from db), change format to (mmm dd, yyyy) to match deliverables pdf, fix calandar icon from using input type = date -->
+                <label for="dob">Date of Birth</label>
+                <div class="create-form-row">
+                    <input type="date" id="dob" name="dob" max="<?= date('Y-m-d') ?>" required>
+                    <img src="image/pencil.png" class="create-form-icon pen" alt="Pencil">
+                </div>
+            </div>
 
-        <!-- in edit personal its DoB -> gender but in dog profile its gender -> DoB (is it a design thing or does client want to standardise)--> 
+            <div class="create-form-col"> <!-- get gender (from db) and auto select gender first instead of leaving it empty -->
+                <label for="gender">Gender</label>
+                <div class="create-form-row gender">
+                    <label class="create-form-gender" for="gender-male">
+                        <span>Male</span>
+                        <input type="radio" name="gender" id="gender-male" value="male" checked>
+                    </label>
+                    <label class="create-form-gender" for="gender-female">
+                        <span>Female</span>
+                        <input type="radio" name="gender" id="gender-female" value="female">
+                    </label>
+                </div>
+            </div>
 
         <div class="create-form-row"><!-- form submission -->
             <button type="submit" class="create-form-button">Next</button>
         </div>
-    </form>
+        </form>
+    </div>
+    </section>
 </body>
 </html>
