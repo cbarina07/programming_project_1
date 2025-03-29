@@ -27,7 +27,7 @@
                     <label for="dogname">Name</label>
                     <div class="create-form-row">
                         <input type="text" name="dogname" id="dogname" placeholder="Enter your dog's name" autocomplete="on" required>
-                        <img src="image/pencil.png" class="create-form-icon pen" alt="Pencil">
+                        <img src="image/pencil.png" class="create-form-icon pen" alt="Edit">
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@
                     <label for="breed">Breed</label>
                     <div class="create-form-row">
                         <input type="text" name="breed" id="breed" placeholder="Enter your dog's breed" autocomplete="on" required>
-                        <img src="image/pencil.png" class="create-form-icon pen" alt="Pencil">
+                        <img src="image/pencil.png" class="create-form-icon pen" alt="Edit">
                     </div>
                 </div>
 
@@ -76,14 +76,14 @@
                     <div class="create-form-row">
                         <img src="image/calendar.png" class="create-form-icon cal" alt="Calendar">
                         <input type="date" id="dob" name="dob" max="<?= date('Y-m-d') ?>" required>
-                        <img src="image/pencil.png" class="create-form-icon pen" alt="Pencil">
+                        <img src="image/pencil.png" class="create-form-icon pen" alt="Edit">
                     </div>
                 </div>
                 <div class="create-form-col">
                     <label for="weight">Weight</label>
                     <div class="create-form-row">
                         <input type="text" name="weight" id="weight" placeholder="Enter your dog's weight" autocomplete="on" required>
-                        <img src="image/pencil.png" class="create-form-icon pen" alt="Pencil">
+                        <img src="image/pencil.png" class="create-form-icon pen" alt="Edit">
                     </div>
                 </div>
         </div>

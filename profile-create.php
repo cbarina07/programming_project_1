@@ -27,14 +27,14 @@
                     <label for="username">Name</label>
                     <div class="create-form-row">
                         <input type="text" name="username" id="username" placeholder="Enter your full name" autocomplete="on" required>
-                        <img src="image/pencil.png" class="create-form-icon pen" alt="Pencil">
+                        <img src="image/pencil.png" class="create-form-icon pen" alt="Edit">
                     </div>
                 </div>
                 <div class="create-form-col">
                     <label for="email">Email</label>
                     <div class="create-form-row">
                         <input type="email" name="email" id="email" placeholder="Enter your email address" autocomplete="on" required>
-                        <img src="image/pencil.png" class="create-form-icon pen" alt="Pencil">
+                        <img src="image/pencil.png" class="create-form-icon pen" alt="Edit">
                     </div>
                 </div>
                 <div class="create-form-col">

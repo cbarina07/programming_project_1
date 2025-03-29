@@ -1,0 +1,275 @@
+:root {
+  --color-white: #fff;
+  --color-gray: #767169;
+  --color-gray-light: #9b9893;
+  --color-cream: #efebea;
+  --color-blue: #002d45;
+  --color-orange: #fb8200;
+  --color-brown: #544235;
+  --color-shadow: 0 3px 6px rgba(141, 107, 80, 0.1);
+  --color-shadow-hovered: 0 5px 10px rgba(141, 107, 80, 0.5);
+  --size-max-width: 320px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.375s ease;
+  color: var(--color-brown);
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--color-blue);
+}
+
+body {
+  background-color: var(--color-cream);
+}
+
+button, a {
+  cursor: pointer;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.375s ease;
+  color: var(--color-brown);
+  font-family: "Roboto", sans-serif;
+}
+
+.setting-page-wrapper {
+  max-width: var(--size-max-width);
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+.setting-header-container {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.setting-header-container::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--color-blue);
+  z-index: -1;
+}
+
+.setting-header-back {
+  display: contents;
+}
+
+.setting-header-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.setting-header-title {
+  color: var(--color-white);
+  font-size: 1.1rem;
+}
+
+#setting-profile {
+  position: relative;
+  overflow: hidden;
+}
+
+#setting-profile::before {
+  content: "";
+  position: absolute;
+  top: -102%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 540px;
+  height: 345px;
+  border-radius: 50%;
+  background-color: var(--color-blue);
+  z-index: -1;
+}
+
+.setting-profile-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.setting-profile-col {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+}
+
+.setting-profile-frame {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setting-profile-frame.dog {
+  width: 130px;
+  height: 130px;
+}
+
+.setting-profile-icon {
+  width: 23px;
+  height: 23px;
+}
+
+.setting-profile-desc {
+  color: var(--color-blue);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.setting-profile-pic {
+  height: 100%;
+  width: auto;
+}
+
+.setting-profile-information {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+
+.setting-profile-name {
+  font-size: 1.5rem;
+}
+
+.setting-profile-email {
+  color: var(--color-gray);
+  font-size: 0.9rem;
+}
+
+.setting-profile-location {
+  color: var(--color-gray-light);
+  font-size: 0.9rem;
+}
+
+#setting-general {
+  padding: 30px 0;
+}
+
+.setting-general-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+}
+
+.setting-general-title {
+  font-size: 1.1rem;
+}
+
+.setting-general-menu {
+  display: contents;
+}
+
+.setting-general-menu-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.setting-general-container {
+  display: grid;
+  gap: 10px;
+}
+
+.setting-general-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  background-color: var(--color-white);
+  border-radius: 23px;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.setting-general-frame {
+  height: 45px;
+  width: 45px;
+  background-color: var(--color-cream);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setting-general-item.highlighted {
+  border: 2px solid var(--color-orange);
+}
+
+.setting-general-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.setting-general-desc {
+  font-size: 0.9rem;
+}
+
+.setting-general-next {
+  height: 25px;
+  width: 25px;
+}
+
+.setting-general-container.logout {
+  padding: 45px 0 30px;
+}
+
+.setting-general-desc.logout {
+  text-align: left;
+}
+
+.setting-mode-button {
+  display: flex;
+  background-color: var(--color-cream);
+  height: 25px;
+  width: 50px;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.setting-mode-circle {
+  background-color: var(--color-white);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(141, 107, 80, 0.5);
+}
+
+.setting-mode-button.dark {
+  background-color: var(--color-gray);
+}
+
+.setting-mode-button.dark .setting-mode-circle {
+  margin-left: auto;
+}
+
+
+@media screen and (min-width: 400px) {
+  :root {
+    --size-max-width: 375px;
+  }
+}

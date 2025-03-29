@@ -56,7 +56,7 @@
                     <label for="other-lifestyle">Other</label>
                     <div class="create-form-row">
                         <input type="text" name="other-lifestyle" id="other-lifestyle" placeholder="Other (please describe)" autocomplete="on" required>
-                        <img src="image/pencil.png" class="create-form-icon pen" alt="Pencil">
+                        <img src="image/pencil.png" class="create-form-icon pen" alt="Edit">
                     </div>
                 </div>
                 <div class="create-form-row">
