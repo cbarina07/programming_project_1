@@ -18,7 +18,7 @@ $photos = [
     '../image/default_journal_pic_1.jpg',
     '../image/default_journal_pic_2.jpg',
     '../image/default_journal_pic_3.jpg',
-    
+
     // Placeholder for Journal Photos
 ];
 ?>
@@ -52,7 +52,11 @@ $photos = [
 
                 <!-- QR Share text -->
                 <!-- DOES NOT LINK ANYWHERE FOR THE MOMENT -->
-                <div class="qr-share-text">🔲 Open QR Code To Share</div>
+                <div class="qr-share-text">
+                    <img src="../image/qr_code.png" alt="QR Code"
+                        style="height: 16px; vertical-align: middle; margin-right: 6px;">
+                    Open QR Code To Share
+                </div>
 
                 <!-- Location, Age and Dog Stats -->
                 <div class="profile-meta">
@@ -142,12 +146,15 @@ $photos = [
                             <?php endif; ?>
                         <?php endif; ?>
                     </div>
+
+                    <!-- NOT CURRENTLY DISPLAYING XP GAINED -->
                     <p class="xp-earned">+100xp</p>
                 </div>
             </div>
 
             <div id="territory" class="tab-content" style="display:none;">
                 <div class="journal-entry">
+                    <!--STATIC TERRITORIES FOR NOW -->
                     <h3>Territory List</h3>
                     <p>🗺️ Central Bark</p>
                     <p>🌳 Carlton Gardens</p>
@@ -156,6 +163,8 @@ $photos = [
 
             <div id="achievements" class="tab-content" style="display:none;">
                 <div class="journal-entry">
+
+                    <!--STATIC ACHIEVEMENTS FOR NOW -->
                     <h3>Achievements</h3>
                     <ul>
                         <li>🏆 First Walk</li>
@@ -182,7 +191,7 @@ $photos = [
                     // Set clicked tab as active
                     event.target.classList.add('active');
 
-                    
+
                 }
             </script>
         </div>
