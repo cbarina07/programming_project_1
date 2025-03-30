@@ -1,0 +1,292 @@
+/* Reset & Base Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f6fa;
+}
+
+/* Background wrapper */
+.background-wrapper {
+    background-color: #eeeced;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    position: relative;
+}
+
+/* Top blue background arc */
+.background-wrapper::before {
+    content: "";
+    background-color: #162f45;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 380px;
+    width: 100%;
+    z-index: 1;
+    border-bottom-left-radius: 30% 10%;
+    border-bottom-right-radius: 30% 10%;
+}
+
+/* Main profile content container */
+.profile-container {
+    max-width: 430px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
+}
+
+/* Header Section */
+.profile-header {
+    color: white;
+    text-align: center;
+    padding: 70px 20px 80px;
+    position: relative;
+}
+
+/* Top left dog name */
+.profile-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.dog-header-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+/* Edit button (top right) */
+.edit-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Profile Image */
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    display: block;
+}
+
+/* QR Share Text */
+.qr-share-text {
+    font-size: 13px;
+    color: #fff;
+    margin-top: 8px;
+}
+
+/* Location & Age */
+.profile-meta {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+/* Breed / Size / Weight row */
+.dog-stats-row {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 12px;
+    font-size: 13px;
+    text-align: left;
+    color: #ccc;
+    padding-top: 10px;
+}
+
+.dog-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0 10px;
+}
+
+.dog-stat .stat-title {
+    font-size: 11px;
+    color: rgb(124, 131, 153);
+    margin-bottom: 2px;
+}
+
+.dog-stat .stat-value {
+    font-weight: 700;
+    color: rgb(124, 131, 153);
+}
+
+/* Add divider lines to left and middle columns */
+.stat-divider {
+    border-right: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
+
+/* Stats Section */
+.stats-wrapper {
+    position: relative;
+    top: -50px;
+    z-index: 2;
+    padding: 0 16px;
+    
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    justify-content: center;
+    
+}
+
+/* Individual stat box */
+.stat-box {
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stat-icon {
+    font-size: 20px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #dce2ba;
+}
+
+.stat-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stat-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #888;
+    margin-top: 2px;
+}
+
+/* Tabs */
+.tab-bar {
+    margin-top: -30px; /* Reduce space above tabs */
+    display: flex;
+    justify-content: space-around;
+    background: #f0f0f000;
+    padding: 0;
+}
+
+.tab {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #ffffff;
+    border: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.tab.active {
+    background: #fff8b0;
+    font-weight: bold;
+}
+
+/* Journal Section */
+.journal-entry {
+    margin: 16px;
+    padding: 16px;
+    background: #f4f4f8;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.journal-entry h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.journal-entry p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tags span {
+    background: #eee;
+    padding: 4px 8px;
+    border-radius: 20px;
+    margin: 2px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+/*JOURNAL PHOTOS */
+
+.photos-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 8px;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.main-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.side-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.side-photos img {
+    width: 100%;
+    height: calc(50% - 4px); /* half of the 200px height minus half the gap */
+    object-fit: cover;
+    border-radius: 12px;
+}
+.xp-earned {
+    font-size: 13px;
+    color: #e3af00;
+    font-weight: bold;
+    margin-top: 8px;
+}
