@@ -63,7 +63,7 @@
                 <div class="create-form-col">
                     <label for="other-dislike">Other</label>
                     <div class="create-form-row">
-                        <input type="text" name="other-dislike" id="other-dislike" placeholder="Other (please describe)" autocomplete="on" required>
+                        <input type="text" name="other-dislike" id="other-dislike" placeholder="Other (please describe)" autocomplete="on">
                         <img src="image/pencil.png" class="create-form-icon pen" alt="Edit">
                     </div>
                 </div>

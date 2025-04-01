@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "rubik-bold";
+  src: url("../font/Rubik-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik-semibold";
+  src: url("../font/Rubik-SemiBold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik-medium";
+  src: url("../font/Rubik-Medium.ttf");
+  font-display: swap;
+}
+
 :root {
   --color-white: #fff;
   --color-gray: #a1a5b0;
@@ -5,12 +21,15 @@
   --color-cream: #f4f0ef;
   --color-blue: #012f47;
   --color-purple: #7341d8;
-  --color-orange: #fb8200;
   --color-brown: #544235;
   --color-blue-dark: #0F3046;
   --color-shadow: 0 3px 6px rgba(141, 107, 80, 0.1);
   --color-shadow-hovered: 0 5px 10px rgba(141, 107, 80, 0.5);
   --size-max-width: 320px;
+  --font-bold: rubik-bold;
+  --font-semibold: rubik-semibold;
+  --font-medium: rubik-medium;
+
 }
 
 * {
@@ -19,7 +38,7 @@
   box-sizing: border-box;
   transition: all 0.375s ease;
   color: var(--color-brown);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-medium)
 }
 
 body {
@@ -102,6 +121,7 @@ a{
   max-width: 290px;
   margin: 50px auto;
   font-size: 2.8rem;
+  font-family: var(--font-bold);
 }
 
 .create-form {
@@ -121,6 +141,7 @@ a{
 
 label {
   font-size: 0.8rem;
+  font-family: var(--font-semibold);
 }
 
 input,
@@ -170,7 +191,7 @@ input[type="date"] {
 
 .create-form-button {
   margin: 30px 0 40px;
-  background-color: var(--color-orange);
+  background-color: var(--color-purple);
   color: var(--color-white);
   border: none;
   height: 50px;

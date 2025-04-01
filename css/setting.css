@@ -1,14 +1,38 @@
+@font-face {
+  font-family: "rubik-bold";
+  src: url("../font/Rubik-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik-semibold";
+  src: url("../font/Rubik-SemiBold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik-medium";
+  src: url("../font/Rubik-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "rubik-light";
+  src: url("../font/Rubik-Light.ttf");
+  font-display: swap;
+}
+
 :root {
-  --color-white: #fff;
+  --color-white: #FFFAFA;
   --color-gray: #767169;
   --color-gray-light: #9b9893;
   --color-cream: #efebea;
   --color-blue: #002d45;
-  --color-orange: #fb8200;
+  --color-purple: #7341d8;
   --color-brown: #544235;
   --color-shadow: 0 3px 6px rgba(141, 107, 80, 0.1);
   --color-shadow-hovered: 0 5px 10px rgba(141, 107, 80, 0.5);
   --size-max-width: 320px;
+  --font-bold: rubik-bold;
+  --font-semibold: rubik-semibold;
+  --font-medium: rubik-medium;
 }
 
 * {
@@ -19,6 +43,7 @@
   color: var(--color-brown);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
+  font-family: var(--font-medium);
 }
 
 header {
@@ -32,15 +57,6 @@ body {
 button, a {
   cursor: pointer;
   border: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: all 0.375s ease;
-  color: var(--color-brown);
-  font-family: "Roboto", sans-serif;
 }
 
 .setting-page-wrapper {
@@ -80,6 +96,8 @@ button, a {
 .setting-header-title {
   color: var(--color-white);
   font-size: 1.1rem;
+  letter-spacing: .5px;
+  font-family: var(--font-semibold);
 }
 
 #setting-profile {
@@ -113,17 +131,22 @@ button, a {
   display: grid;
   gap: 8px;
   justify-items: center;
+  grid-template-rows: 60px 30px;
 }
 
 .setting-profile-frame {
   width: 60px;
   height: 60px;
-  background-color: var(--color-orange);
+  background-color: var(--color-purple);
   border-radius: 50%;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.setting-profile-frame:hover {
+  background-color: #9c89c4;;
 }
 
 .setting-profile-frame.dog {
@@ -132,8 +155,8 @@ button, a {
 }
 
 .setting-profile-icon {
-  width: 23px;
-  height: 23px;
+  width: 27px;
+  height: 27px;
 }
 
 .setting-profile-desc {
@@ -155,6 +178,7 @@ button, a {
 
 .setting-profile-name {
   font-size: 1.5rem;
+  font-family: var(--font-bold);
 }
 
 .setting-profile-email {
@@ -180,6 +204,7 @@ button, a {
 
 .setting-general-title {
   font-size: 1.1rem;
+  font-family: var(--font-semibold);
 }
 
 .setting-general-menu {
@@ -205,6 +230,7 @@ button, a {
   padding: 10px;
   gap: 10px;
   box-shadow: var(--color-shadow);
+  border: 2px solid var(--color-cream);
 }
 
 .setting-general-frame {
@@ -217,8 +243,8 @@ button, a {
   align-items: center;
 }
 
-.setting-general-item.highlighted {
-  border: 2px solid var(--color-orange);
+.setting-general-item:active, .setting-general-item:hover {
+  border: 2px solid var(--color-purple);
 }
 
 .setting-general-icon {
@@ -228,6 +254,8 @@ button, a {
 
 .setting-general-desc {
   font-size: 0.9rem;
+  font-family: var(--font-medium);
+  font-weight: normal;
 }
 
 .setting-general-next {
@@ -272,5 +300,9 @@ button, a {
 @media screen and (min-width: 400px) {
   :root {
     --size-max-width: 375px;
+  }
+
+  .setting-profile-col {
+    grid-template-rows: none;
   }
 }

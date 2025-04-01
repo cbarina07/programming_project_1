@@ -63,7 +63,7 @@
                 <div class="create-form-col">
                     <label for="other-training">Other</label>
                     <div class="create-form-row">
-                        <input type="text" name="other-training" id="other-training" placeholder="Other (please describe)" autocomplete="on" required>
+                        <input type="text" name="other-training" id="other-training" placeholder="Other (please describe)" autocomplete="on">
                         <img src="image/pencil.png" class="create-form-icon pen" alt="Pencil">
                     </div>
                 </div>

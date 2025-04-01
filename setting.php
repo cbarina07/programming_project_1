@@ -21,17 +21,17 @@
         <div class="setting-page-wrapper">
             <div class="setting-profile-container">
                 <div class="setting-profile-col">
-                    <a href="#" class="setting-profile-frame">
-                        <img src="image/qr_code.png" class="setting-profile-icon" alt="QR">
+                    <a href="edit_dog.php" class="setting-profile-frame">
+                        <img src="image/dog_setting.png" class="setting-profile-icon" alt="Dog Setting">
                     </a>
-                    <p class="setting-profile-desc">Open QR Code</p>
+                    <p class="setting-profile-desc">Edit Dog Profile</p>
                 </div>
                 <div class="setting-profile-frame dog">
                     <img src="image/examplepic.png" class="setting-profile-pic" alt="Profile Picture">
                 </div>
                 <div class="setting-profile-col">
-                    <a href="#" class="setting-profile-frame">
-                        <img src="image/edit.png" class="setting-profile-icon" alt="Edit">
+                    <a href="edit_person.php" class="setting-profile-frame">
+                        <img src="image/user_setting.png" class="setting-profile-icon" alt="User Setting">
                     </a>
                     <p class="setting-profile-desc">Edit Profile</p>
                 </div>
@@ -52,25 +52,32 @@
                 </button>
             </div>
             <div class="setting-general-container">
-                <a href="#" class="setting-general-item highlighted">
+                <a href="#" class="setting-general-item">
                     <div class="setting-general-frame">
                         <img src="image/notification.png" class="setting-general-icon" alt="Notification">
                     </div>
                     <h4 class="setting-general-desc">Notifications</h4>
                     <img src="image/next.png" class="setting-general-next" alt="Next">
                 </a>
-                <a href="#" class="setting-general-item highlighted">
+                <a href="#" class="setting-general-item">
                     <div class="setting-general-frame">
                         <img src="image/user.png" class="setting-general-icon" alt="Personal Information">
                     </div>
                     <h4 class="setting-general-desc">Personal Information</h4>
                     <img src="image/next.png" class="setting-general-next" alt="Next">
                 </a>
-                <a href="#" class="setting-general-item highlighted">
+                <a href="#" class="setting-general-item">
                     <div class="setting-general-frame">
                         <img src="image/share.png" class="setting-general-icon" alt="Share">
                     </div>
                     <h4 class="setting-general-desc">Invite Pet Care Providers</h4>
+                    <img src="image/next.png" class="setting-general-next" alt="Next">
+                </a>
+                <a href="#" class="setting-general-item">
+                    <div class="setting-general-frame">
+                        <img src="image/qr_icon.png" class="setting-general-icon" alt="Setting">
+                    </div>
+                    <h4 class="setting-general-desc">Open QR COde</h4>
                     <img src="image/next.png" class="setting-general-next" alt="Next">
                 </a>
                 <a href="#" class="setting-general-item">

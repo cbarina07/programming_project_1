@@ -11,7 +11,7 @@
         <div class="setup-back-wrapper"> <!--TODO: add link to go back to previous page 'settings' page-->
             <div class="create-back-container">
                 <h3 class="create-back-desc">
-                    <a href="/"><img src="/image/back_arrow.png">  Edit Dog Profile</a>
+                    <a href="/"><img src="image/back_arrow.png">  Edit Dog Profile</a>
                 </h3>
             </div>
 
