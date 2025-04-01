@@ -29,7 +29,6 @@
   --font-bold: rubik-bold;
   --font-semibold: rubik-semibold;
   --font-medium: rubik-medium;
-
 }
 
 * {
@@ -355,12 +354,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 
-@media screen and (min-width: 400px) {
-  :root {
-    --size-max-width: 375px;
-  }
-}
-
 /* Dog profile */
 .create-row.dog {
   display: flex;
@@ -389,4 +382,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .create-dog:has(input[type="radio"]:checked) span {
   color: var(--color-purple);
+}
+
+
+@media screen and (min-width: 400px) {
+  :root {
+    --size-max-width: 375px;
+  }
 }
