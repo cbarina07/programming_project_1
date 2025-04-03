@@ -44,7 +44,7 @@ $photos = [
 
                 <!-- Edit button in top-right -->
                 <a href="../edit_person.php">
-                    <button class="edit-button">Edit Profile ✏️</button>
+                    <button class="edit-button"> Settings⚙️</button>
                 </a>
 
                 <!-- Dog image -->

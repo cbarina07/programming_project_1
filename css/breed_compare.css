@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "rubik-bold";
+    src: url("../font/Rubik-Bold.ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "rubik-semibold";
+    src: url("../font/Rubik-SemiBold.ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "rubik-medium";
+    src: url("../font/Rubik-Medium.ttf");
+    font-display: swap;
+  }
+  
+  :root {
+    --color-white: #fff;
+    --color-gray: #a1a5b0;
+    --color-gray-light: #e6ebef;
+    --color-cream: #f4f0ef;
+    --color-blue: #012f47;
+    --color-purple: #7341d8;
+    --color-brown: #544235;
+    --font-bold: rubik-bold;
+    --font-semibold: rubik-semibold;
+    --font-medium: rubik-medium;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.375s ease;
+    color: var(--color-brown);
+    font-family: var(--font-medium);
+  }
+  
+  body {
+    background-color: var(--color-cream);
+    padding: 30px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .page-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1.page-title {
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--font-bold);
+    color: var(--color-brown);
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    background: var(--color-white);
+    border-radius: 20px;
+    padding: 24px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--color-blue);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 36px;
+    width: 100%;
+    max-width: 700px;
+    font-family: var(--font-semibold);
+  }
+  
+  /* New Table-Like Layout */
+  .comparison-table {
+    width: 100%;
+    max-width: 900px;
+    background: var(--color-white);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .comparison-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-gray-light);
+  }
+  
+  .comparison-row label {
+    font-family: var(--font-semibold);
+    color: var(--color-brown);
+    font-size: 0.9rem;
+  }
+  
+  .comparison-row p {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    text-align: center;
+  }
+  
+  .comparison-row:last-child {
+    border-bottom: none;
+  }
+
+  .comparison-header-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--color-gray-light);
+    font-family: var(--font-semibold);
+    color: var(--color-blue);
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  
