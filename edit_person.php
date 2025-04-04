@@ -17,7 +17,7 @@
                     <!-- links back to profile page -->
                     <a href="profile/profile_page.php">
                         <!-- fixed back arrow not dispalying correctly -->
-                        <img src="image/back_arrow.png" alt="Back"> Edit Dog Profile
+                        <img src="image/back_arrow.png" alt="Back"> Personal Information
                     </a>
                 </h3>
             </div>
