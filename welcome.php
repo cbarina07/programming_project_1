@@ -119,23 +119,11 @@
 
             <div class="login-buttons">
                 <button class="email-btn">
-                    <img src="image/email.svg" alt="Email Icon" class="btn-icon">
-                    Continue with E-mail
+                    Login
                 </button>
-                <div class="social-buttons">
-                    <button class="social-btn">
-                        <img src="image/apple.png" alt="Apple Icon" class="btn-icon">
-                        Apple
-                    </button>
-                    <button class="social-btn">
-                        <img src="image/google.png" alt="Google Icon" class="btn-icon">
-                        Google
-                    </button>
-                    <button class="social-btn">
-                        <img src="image/fb.png" alt="Facebook Icon" class="btn-icon">
-                        Facebook
-                    </button>
-                </div>
+                <button class="email-btn">
+                    Register
+                </button>
             </div>
         </div>
     </div>
